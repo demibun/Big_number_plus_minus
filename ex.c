@@ -163,7 +163,7 @@ void multi(struct numbers nums[])
 int main(void)
 {
 	struct numbers nums[2];
-	char geti[max * 3] /* °ø¹é Æ÷ÇÔ ÀÔ·Â */, getf[max * 3] = { 0 }; /* °ø¹é Á¦°Å */
+	char geti[max * 3] /* ê³µë°± í¬í•¨ ì…ë ¥ */, getf[max * 3] = { 0 }; /* ê³µë°± ì œê±° */
 	int i, j = 0, num_len = 0, len = 0, lenf = 0;
 	int c1 = 0, c2 = 0, cnt = 0;
 
@@ -173,7 +173,7 @@ int main(void)
 		nums[1].num[i] = '\0';
 	}
 
-	printf("»ç¿ë¹ı: ¼ıÀÚ¿Í ¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ°í ¿£ÅÍ¸¦ ´©¸£¼¼¿ä.\nex) 32 * 532 / 2 - 7 + 8\n\n");
+	printf("ì‚¬ìš©ë²•: ìˆ«ìì™€ ì—°ì‚°ìë¥¼ ì…ë ¥í•˜ê³  ì—”í„°ë¥¼ ëˆ„ë¥´ì„¸ìš”.\nex) 32 + 12 ì—”í„°\n\n");
 	scanf(" %[^\n]", geti);
 
 	len = strlen(geti);
@@ -189,7 +189,7 @@ int main(void)
 	}
 	lenf = strlen(getf);
 
-	for (i = 0; i < lenf; i++) // ¸ğµç ¼ıÀÚ¿Í ¿¬»êÀÚ È®ÀÎ
+	for (i = 0; i < lenf; i++) // ëª¨ë“  ìˆ«ìì™€ ì—°ì‚°ì í™•ì¸
 	{
 		if ((getf[i] == '+') || (getf[i] == '-') || (getf[i] == '*') || (getf[i] == '/'))
 		{
